@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <audio autoplay>
+    <source src="assets/sou.mp3" type="audio/mpeg">
+    </audio>
+
     <div class='triangle'></div>
     <div class='container'>
       <div class='space'></div>
@@ -92,22 +96,16 @@
     })
     </script>
     <script>
-    var audio = new Audio("https://rajex.netlify.app/assets/af1.mp3");
-    audio.volume = 0.7;
-    if (typeof audio.loop == 'boolean')
-    {
-    audio.loop = true;
-    }
-    else
-    {
-    audio.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-    }, false);
-    }
-    function playAudio() {
-    audio.play();
-    }
+    var source = "assets/af1.mp3"
+     var audio = document.createElement("audio");
+     //
+     audio.autoplay = true;
+     //
+     audio.load()
+     audio.addEventListener("load", function() { 
+         audio.play(); 
+     }, true);
+     audio.src = source;
     </script>
   </body>
 </html>
