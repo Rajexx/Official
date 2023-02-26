@@ -54,6 +54,10 @@
     swal({
       title: "Welcome!",
       icon: "success",
+    })
+    .then((value) => {
+    playAudio()
+    swal(`The returned value is: ${value}`);
     });
     </script>
     <script>
