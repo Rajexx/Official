@@ -7,23 +7,27 @@
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap"
     rel="stylesheet">
     <link rel='stylesheet' href='style.css'>
+    <script src="./assets/sweetalert.js"></script>
+    <link rel='stylesheet' href='./assets/sweetalert.js'>
 
     <title>@razxh_</title>
   </head>
 
-  <body>
-    <div class='triangle'></div>
-    <div class='container'>
-      <div class='space'></div>
-      <div class='header--box'>
-      <header class='header'>
-        <div class='header__chat-box'>
-          <div class='header__chat-box--behind'>
-          <div class='header__chat-box--front'>
-            <h1>hi.</h1>
+  <body oncontextmenu="return false" onclick="playAudio()">
+    <template id="popup">
+    <swal-title>Welcome!</swal-title>
+      <div class='triangle'></div>
+      <div class='container'>
+        <div class='space'></div>
+        <div class='header--box'>
+        <header class='header'>
+          <div class='header__chat-box'>
+            <div class='header__chat-box--behind'>
+            <div class='header__chat-box--front'>
+              <h1>hi.</h1>
+            </div>
+            </div>
           </div>
-          </div>
-        </div>
 
         <div class='header__icon-box'>
           <img src='https://github.com/Rajexx/Official/blob/main/%F0%9F%8C%B8%E2%94%8A%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A7%20%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%20%E0%BF%93.jpeg?raw=true' alt='cartoon portrait of Westy'
@@ -49,6 +53,11 @@
       <div class='user-info'><h2>Copyright &copy; 2023 Rajex</h2></div>
     </div>
     </div>
+    <script>
+      Swal.fire({
+        template: '#popup'
+      })
+    </script>
     <script>
     var audio = new Audio("https://rajex.netlify.app/assets/af1.mp3");
     audio.volume = 0.7;
