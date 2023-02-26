@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap"
+    rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+
+    <title>@razxh_</title>
+  </head>
+
+  <body>
+    <div class='triangle'></div>
+    <div class='container'>
+      <div class='space'></div>
+      <div class='header--box'>
+      <header class='header'>
+        <div class='header__chat-box'>
+          <div class='header__chat-box--behind'>
+          <div class='header__chat-box--front'>
+            <h1>hi.</h1>
+          </div>
+          </div>
+        </div>
+
+        <div class='header__icon-box'>
+          <img src='https://github.com/Rajexx/Official/blob/main/%F0%9F%8C%B8%E2%94%8A%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A7%20%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%20%E0%BF%93.jpeg?raw=true' alt='cartoon portrait of Westy'
+          class='header__icon'/>
+        </div>
+      </header>
+      </div>
+
+      <div class="user-info"><h1>Hello! I'm Rajex, Nice To Meet You!<br></br></h1></div>
+
+      <div class="user-info"><h3>Here's some of my social media<br></br></h3></div>
+        
+    <div class='links-container'>
+      <li class='right'><a class='link' href='https://www.instagram.com/razxh_/'>Instagram</a>
+        </li>
+      <li class='left'><a class='link'href='https://www.tiktok.com/@razxh_/'>Tiktok</a>
+        </li>
+      <li class='right'><a class='link'href='https://twitter.com/razxh_/'>Twitter</a>
+        </li>
+    </div>
+
+    <div class='user-info-box'>
+      <div class='user-info'><h2>Copyright &copy; 2023 Rajex</h2></div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+    document.onkeydown = function(e) {
+        if(event.keyCode == 123) {
+        return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+        return false;
+    }
+        if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+        return false;
+    }
+    }
+    </script>
+    <script>
+    Swal.fire({
+    template: '#popup'
+    })
+    </script>
+    <script>
+    var audio = new Audio("http://localhost:5500/assets/af1.mp3");
+    audio.volume = 0.7;
+    if (typeof audio.loop == 'boolean')
+    {
+    audio.loop = true;
+    }
+    else
+    {
+    audio.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+    }
+    function playAudio() {
+    audio.play();
+    }
+    </script>
+  </body>
+</html>
