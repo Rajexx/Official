@@ -9,10 +9,20 @@
     <link rel='stylesheet' href='style.css'>
     <script src="./assets/sweetalert.js"></script>
     <link rel='stylesheet' href='./assets/sweetalert.js'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>@razxh_</title>
   </head>
 
+  <body oncontextmenu="return false" onclick="playAudio()">
+    <script>
+        Swal.fire({
+          icon: 'success',
+          title: 'Welcome!',
+          text: 'Thank You For Visiting!',
+          footer: "<a href='https://youtu.be/BT9h5ifR1tY'>Click This If You're feeling bad!</a>"
+        })
+      </script>
       <div class='triangle'></div>
       <div class='container'>
         <div class='space'></div>
@@ -35,7 +45,7 @@
 
       <div class="user-info"><h1>Hello! I'm Rajex, Nice To Meet You!<br></br></h1></div>
 
-      <div class="user-info"><h3>Here are some of my social media<br></br></h3></div>
+      <div class="user-info"><h2>Here are some of my social media<br></br></h2></div>
         
     <div class='links-container'>
       <li class='right'><a class='link' href='https://www.instagram.com/razxh_/'>Instagram</a>
@@ -44,6 +54,8 @@
         </li>
       <li class='right'><a class='link'href='https://twitter.com/razxh_/'>Twitter</a>
         </li>
+      <li class="left"><a class="link"href='https://www.youtube.com/channel/UCPCPhe9V2ctgHkCMLqXVvuQ'>YouTube</a>
+      </li>
     </div>
 
     <div class='user-info-box'>
@@ -51,15 +63,8 @@
     </div>
     </div>
     <script>
-    swal("Welcome!")
-    .then((value) => {
-    playAudio()
-    swal(`The returned value is: ${value}`);
-    });
-    </script>
-    <script>
     var audio = new Audio("https://rajex.netlify.app/assets/af1.mp3");
-    audio.volume = 0.7;
+    audio.volume = 1;
     if (typeof audio.loop == 'boolean')
     {
         audio.loop = true;
