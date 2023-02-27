@@ -17,10 +17,8 @@
   <body oncontextmenu="return false" onclick="playAudio()">
     <script>
         Swal.fire({
-          icon: 'success',
+          icon: 'info',
           title: 'Welcome!',
-          text: 'Thank You For Visiting!',
-          footer: "<a href='https://youtu.be/BT9h5ifR1tY'>Click This If You're feeling bad!</a>"
         })
       </script>
       <div class='triangle'></div>
@@ -31,7 +29,7 @@
           <div class='header__chat-box'>
             <div class='header__chat-box--behind'>
             <div class='header__chat-box--front'>
-              <h1>hi.</h1>
+              <h1>Hi</h1>
             </div>
             </div>
           </div>
@@ -50,7 +48,7 @@
     <div class='links-container'>
       <li class='right'><a class='link' href='https://www.instagram.com/razxh_/'>Instagram</a>
         </li>
-      <li class='left'><a class='link'href='https://www.tiktok.com/@razxh_/'>Tiktok</a>
+      <li class='left'><a class='link'href='https://tiktok.com/@razxh_'>Tiktok</a>
         </li>
       <li class='right'><a class='link'href='https://twitter.com/razxh_/'>Twitter</a>
         </li>
@@ -59,11 +57,12 @@
     </div>
 
     <div class='user-info-box'>
+      <a class="user-info-rick" href="https://youtu.be/BT9h5ifR1tY"><h3>Click This If You're Feeling Bad!</h3></a>
       <div class='user-info'><h2>Copyright &copy; 2023 Rajex</h2></div>
     </div>
     </div>
     <script>
-    var audio = new Audio("https://rajex.netlify.app/assets/af1.mp3");
+    var audio = new Audio("https://rajex.my.id/assets/af1.mp3");
     audio.volume = 1;
     if (typeof audio.loop == 'boolean')
     {
