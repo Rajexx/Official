@@ -216,6 +216,7 @@ body {
 }
 
 .links-container li.right a {
+  font-family: 'Patrick Hand';
   transform: skew(20deg);
   display: block;
 }
@@ -226,6 +227,7 @@ body {
 }
 
 .links-container li.left a {
+  font-family: 'Patrick Hand';
   transform: skew(-20deg);
   display: block;
 }
