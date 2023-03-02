@@ -1,83 +1,100 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'>
+<html>
+​
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Patrick+Hand|Josefin+Sans&display=swap"
-    rel="stylesheet">
-    <link rel='stylesheet' href='style.css'>
-    <script src="./assets/sweetalert.js"></script>
-    <link rel='stylesheet' href='./assets/sweetalert.js'>
+    <title>Rajexx</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <title>@razxh_</title>
-  </head>
-
-  <body oncontextmenu="return false" onclick="playAudio()">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0314add227.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://github.com/Rajexx/Official/raw/main/assets/link-solid.svg" type="image/x-icon" />
+</head>
+​
+<body oncontextmenu="return false" onclick="playAudio()">
     <script>
         Swal.fire({
           icon: 'info',
           title: 'Welcome!',
         })
-      </script>
-      <div class='triangle'></div>
-      <div class='container'>
-        <div class='space'></div>
-        <div class='header--box'>
-        <header class='header'>
-          <div class='header__chat-box'>
-            <div class='header__chat-box--behind'>
-            <div class='header__chat-box--front'>
-              <h1>Hi</h1>
+    </script>
+    <section class="animated-background">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+​
+    <a id="profilePicture" href="#popup">
+        <img src="https://github.com/Rajexx/Official/blob/main/%F0%9F%8C%B8%E2%94%8A%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A7%20%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%20%E0%BF%93.jpeg?raw=true" alt="Profile Picture">
+    </a>
+​
+    <div class="overlay" id="popup">
+        <div class="popup">
+            <div class="popup-photo">
+                <a href="https://github.com/Rajexx/Official/blob/main/%F0%9F%8C%B8%E2%94%8A%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A7%20%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%20%E0%BF%93.jpeg?raw=true" target="_blank">
+                </a>
             </div>
+            <div class="popup-quote">
+                One must still have chaos in oneself to be able to give birth to a dancing star
             </div>
-          </div>
-
-        <div class='header__icon-box'>
-          <img src='https://github.com/Rajexx/Official/blob/main/%F0%9F%8C%B8%E2%94%8A%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A7%20%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%20%E0%BF%93.jpeg?raw=true' alt='cartoon portrait of Westy'
-          class='header__icon'/>
+​
+            <a class="popup-close" onclick="history.back()">&times;</a>
         </div>
-      </header>
-      </div>
+    </div>
+​
+    <div id="userName">
+        @razxh_
+    </div>
+    <br>
+    <br>
+    <div id="info">
+        Hello! I'm Rajex
+    </div>
+​
+    <div id="links">
+      
+      <a class="link" href="https://tiktok.com/@razxh" target="_blank"><i
+                class="fa-brands fa-tiktok">&nbsp;</i>TikTok</a>
+      
+      <a class="link" href="https://www.instagram.com/razxh_/" target="_blank"><i
+                class="fa-brands fa-instagram">&nbsp;</i>Instagram</a>
+     
+      <a class="link" href="https://www.youtube.com/channel/UCPCPhe9V2ctgHkCMLqXVvu" target="_blank"><i
+                class="fa-brands fa-youtube">&nbsp;</i>YouTube</a>
 
-      <div class="user-info"><h1>Hello! I'm Rajex, Nice To Meet You!<br></br></h1></div>
+        <a class="link" href="https://twitter.com/razxh_" target="_blank"><i
+                class="fab fa-twitter">&nbsp;</i>Twitter</a>
 
-      <div class="user-info"><h2>Here are some of my social media<br></br></h2></div>
-        
-    <div class='links-container'>
-      <li class='right'><a class='link' href='https://www.instagram.com/razxh_/'>Instagram</a>
-        </li>
-      <li class='left'><a class='link'href='https://tiktok.com/@razxh_'>Tiktok</a>
-        </li>
-      <li class='right'><a class='link'href='https://twitter.com/razxh_/'>Twitter</a>
-        </li>
-      <li class="left"><a class="link"href='https://www.youtube.com/channel/UCPCPhe9V2ctgHkCMLqXVvuQ'>YouTube</a>
-      </li>
+    </div>
+​
+    <div id="hashtag">
+        Copyright &copy; 2023 Rajex 
     </div>
 
     <div class='user-info-box'>
-      <a class="user-info-rick" href="https://youtu.be/BT9h5ifR1tY"><h3>Click This If You're Feeling Bad!<br></br></h3></a>
-      <div class='user-info'><h2>Copyright &copy; 2023 Rajex</h2></div>
+        <div class='user-info'><h2>Copyright &copy; 2023 Rajex</h2></div>
     </div>
-    </div>
+
     <script>
-    var audio = new Audio("https://rajex.my.id/assets/af1.mp3");
-    audio.volume = 1.5;
-    if (typeof audio.loop == 'boolean')
-    {
-        audio.loop = true;
-    }
-    else
-    {
-        audio.addEventListener('ended', function() {
-            this.currentTime = 0;
-            this.play();
-        }, false);
-    }
-    function playAudio() {
-    audio.play();
-    }
+        var audio = new Audio("https://rajex.my.id/assets/song(1).mp3");
+        audio.volume = 1;
+        if (typeof audio.loop == 'boolean')
+        {
+            audio.loop = true;
+        }
+        else
+        {
+            audio.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+        }
+        function playAudio() {
+        audio.play();
+        }
     </script>
-  </body>
+​
+</body>
+​
 </html>
+
