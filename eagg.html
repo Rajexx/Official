@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="styleeagg.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onclick="playAudio()">
+<script>
+  Swal.fire({
+  icon: 'success',
+  title: 'Good Job!',
+  text: 'You Find An Easter Egg',
+})
+</script>
+<script>
+  function runFunctions() {
+  revealBackground();
+  playAudio();
+  console.log("Button clicked!"); // This is an example second function that logs to the console
+}
+</script>
+<script>
+var audio = new Audio("https://rajex.my.id/assets/y2mate.com%20-%20Rick%20Roll%20EARRAPE.mp3");
+        audio.volume = 1;
+        if (typeof audio.loop == 'boolean')
+        {
+            audio.loop = true;
+        }
+        else
+        {
+            audio.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+            }, false);
+        }
+        function playAudio() {
+        audio.play();
+        }
+</script>
+<script>
+  function revealBackground() {
+  var bg = document.getElementById("background");
+  bg.classList.toggle("hidden");
+}
+</script>
+<div id="bg"></div>
+
+</body>
+</html>

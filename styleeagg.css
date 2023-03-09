@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    --bgColor: #223344;
+    --bgColor2: #090a0f;
+    --accentColor: #E6E6E6;
+    --font: 'Karla', sans-serif;
+    --delay: .3s;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: var(--font);
+    color: #f9f9f9;
+  }
+
+  .minimalist-button {
+    padding: 0.5em 1em;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .minimalist-button:hover {
+    text-decoration: underline;
+  }
+
+  #bg {
+    /* The image used */
+    background-image: url("https://media.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
