@@ -12,6 +12,19 @@
 </head>
 ​
 <body oncontextmenu="return false" onclick="playAudio()">
+
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+      <nav>
+        <a href="eagg.html" target="_blank" style="animation-delay: 0.1s">???</a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () => {
+        document.body.classList.toggle("open");
+      };
+    </script>
+
     <script>
         Swal.fire({
           icon: 'info',
@@ -24,7 +37,7 @@
         <div id="stars3"></div>
     </section>
 ​
-    <a id="profilePicture" href="#popup">
+    <a class="profilePicture" href="#popup">
         <img src="https://github.com/Rajexx/Official/blob/main/%F0%9F%8C%B8%E2%94%8A%F0%9D%90%8C%F0%9D%90%A2%F0%9D%90%9C%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A7%20%F0%9D%90%92%F0%9D%90%A1%F0%9D%90%A2%F0%9D%90%A4%F0%9D%90%A2%F0%9D%90%A6%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%20%E0%BF%93.jpeg?raw=true" alt="Profile Picture">
     </a>
 ​
@@ -42,14 +55,11 @@
         </div>
     </div>
 ​
-    <div id="userName">
+    <h4 class="userName">
         @razxh_
-    </div>
-    <br>
-    <br>
-    <div id="info">
-        Hello! I'm Rajex
-    </div>
+    </h4>
+
+    <h4 class="info"> Hello! I'm Rayyan</h4>
 ​
     <div id="links">
       
@@ -62,12 +72,12 @@
       <a class="link" href="https://www.youtube.com/channel/UCPCPhe9V2ctgHkCMLqXVvu" target="_blank"><i
                 class="fa-brands fa-youtube">&nbsp;</i>YouTube</a>
 
-        <a class="link" href="https://twitter.com/razxh_" target="_blank"><i
+      <a class="link" href="https://twitter.com/razxh_" target="_blank"><i
                 class="fab fa-twitter">&nbsp;</i>Twitter</a>
 
     </div>
 ​
-    <div id="hashtag">
+    <div class="hashtag">
         Copyright &copy; 2023 Rajex 
     </div>
 
